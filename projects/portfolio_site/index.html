@@ -18,7 +18,7 @@
 
 <body>
     <header>
-        <div class="logo">YourName</div>
+        <div class="logo">Trung</div>
         <nav>
             <a href="#about">About</a>
             <a href="#skills">Skills</a>
@@ -27,7 +27,7 @@
         </nav>
     </header>
     <section class="hero">
-        <h1>Hi, I'm [Your Name]</h1>
+        <h1>Hi, I'm <span class="accent">Trung</span></h1>
         <p>Full-Stack Developer | UI Designer | Problem Solver</p>
         <a href="#portfolio" class="cta-button">View My Work</a>
     </section>
@@ -35,7 +35,7 @@
         <div class="container">
             <div class="about-grid">
                 <div class="about-image">
-                    <img src="https://via.placeholder.com/400x400" alt="Profile Photo">
+                    <img src="/components/11f29b7b88d1650ac0c835a957c72a20.jpg" alt="Profile Photo">
                 </div>
                 <div class="about-content">
                     <h2>About Me</h2>
@@ -51,36 +51,31 @@
         <div class="container">
             <h2>My Skills</h2>
             <div class="skills-grid">
-                <div class="skill-item">
+                <div class="skill-item" data-percentage="95%">
                     <span class="skill-name">HTML5</span>
                     <div class="skill-bar">
                         <div class="skill-progress" style="width: 95%"></div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item" data-percentage="85%">
                     <span class="skill-name">CSS3</span>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+                        <div class="skill-progress" style="width: 85%"></div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item" data-percentage="80%">
                     <span class="skill-name">JavaScript</span>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+                        <div class="skill-progress" style="width: 80%"></div>
                     </div>
                 </div>
-                <div class="skill-item">
+                <div class="skill-item" data-percentage="90%">
                     <span class="skill-name">React</span>
                     <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
+                        <div class="skill-progress" style="width: 90%"></div>
                     </div>
                 </div>
-                <div class="skill-item">
-                    <span class="skill-name">Node.js</span>
-                    <div class="skill-bar">
-                        <div class="skill-progress" style="width: 95%"></div>
-                    </div>
-                </div>
+
             </div>
         </div>
     </section>
@@ -99,6 +94,13 @@
                     <div class="portfolio-overlay">
                         <h3>E-Commerce Website</h3>
                         <p>React + Node.js</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" data-category="design">
+                    <img src="https://via.placeholder.com/400x300" alt="Project 2">
+                    <div class="portfolio-overlay">
+                        <h3>Library management project</h3>
+                        <p>C# .NET + SQL Server + Azure</p>
                     </div>
                 </div>
                 <div class="portfolio-item" data-category="design">
@@ -138,14 +140,6 @@
             </div>
         </div>
     </section>
-    <a href="#lightbox-1" class="lightbox-link">
-        <img src="..." alt="...">
-    </a>
-
-    <div id="lightbox-1" class="lightbox">
-        <img src="..." alt="...">
-        <a href="#" class="lightbox-close">&times;</a>
-    </div>
     <section id="contact" class="contact-section">
         <div class="container">
             <h2>Get In Touch</h2>
@@ -155,7 +149,7 @@
                     <p>Feel free to reach out. I'm always open to discussing new projects.</p>
                     <div class="info-item">
                         <span class="icon">📧</span>
-                        <span>your.email@example.com</span>
+                        <span>nguyenhuutrung769@gmail.com</span>
                     </div>
                     <div class="info-item">
                         <span class="icon">📍</span>
@@ -165,15 +159,15 @@
                 <form class="contact-form">
                     <div class="form-group">
                         <label for="name">Name</label>
-                        <input type="text" id="name" name="name" required>
+                        <input type="text" id="name" name="name" required placeholder="John Doe">
                     </div>
                     <div class="form-group">
                         <label for="email">Email</label>
-                        <input type="email" id="email" name="email" required>
+                        <input type="email" id="email" name="email" required placeholder="john@example.com">
                     </div>
                     <div class="form-group">
                         <label for="message">Message</label>
-                        <textarea id="message" name="message" rows="5" required></textarea>
+                        <textarea id="message" name="message" rows="5" required placeholder="Tell me about your project..."></textarea>
                     </div>
                     <button type="submit" class="submit-btn">Send Message</button>
                 </form>
@@ -183,7 +177,7 @@
     <footer class="footer">
         <div class="container">
             <div class="footer-content">
-                <div class="footer-logo">YourName</div>
+                <div class="footer-logo">Trung</div>
                 <p class="footer-tagline">Building digital experiences</p>
                 <div class="social-links">
                     <a href="https://github.com/nguyenhuutrung769-afk" class="social-link" aria-label="GitHub">
@@ -201,13 +195,13 @@
                     </a>
                     <a href="mailto:nguyenhuutrung769@gmail.com" class="social-link" aria-label="Email">
                         <svg width="24" height="24" viewBox="0 0 24 24" fill="currentColor">
-                            <path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 ₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁₂₁ Twenty-two
+                             <path d="M12 12.713l-11.99-7.713v13.999h23.98v-13.999l-11.99 7.713zm0-2.427l10.99-7.086h-21.98l10.99 7.086z"/>
 </svg>
                 </a>
             </div>
         </div>
         <div class=" footer-bottom">
-                                <p>&copy; 2026 YourName. All rights reserved.</p>
+                                <p>&copy; 2026 Trung. All rights reserved.</p>
                 </div>
             </div>
     </footer>
